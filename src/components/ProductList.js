@@ -15,9 +15,9 @@ function ProductList({ addToCart }) {
             <ul>
                 {products.map((product) => (
                     <li key={product.id}>
-                        <span>{product.name}</span>
-                        <span>{product.description}</span>
-                        <span>Price : {product.price}</span>
+                        <span>{product.name} &nbsp;&nbsp;&nbsp; </span>
+                        <span>{product.description} &nbsp;&nbsp;&nbsp; </span>
+                        <span>Price : {product.price} &nbsp;&nbsp;&nbsp;</span>
                         <button onClick={() => addToCart(product)}>Add to Cart</button>
                     </li>
                 ))}
